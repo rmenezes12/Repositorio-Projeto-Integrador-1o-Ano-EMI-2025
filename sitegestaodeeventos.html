@@ -89,6 +89,28 @@
     button:hover {
       opacity: 0.9;
     }
+.button-link {
+  width: 299px;
+  height: 44px;
+  padding: 10px;
+  background: #f08a1f;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: #B26019; /* cor do texto */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-decoration: none; /* remove o sublinhado do link */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s ease;
+}
+
+.button-link:hover {
+  opacity: 0.9;
+}
   </style>
 </head>
 
@@ -103,8 +125,10 @@
         <p>Para continuar com essa ação, é necessário<br>entrar em sua conta</p>
       </div>
       <div class="button-container">
-        <button>ENTRAR NA CONTA</button>
-        <button>CRIAR CONTA</button>
+      <div class="button-container">
+  <a href="login.html" class="button-link">ENTRAR NA CONTA</a>
+  <a href="cadastro.html" class="button-link">CRIAR CONTA</a>
+</div>
       </div>
     </div>
   </div>
